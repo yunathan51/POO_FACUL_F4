@@ -12,7 +12,7 @@ public class Livro {
 
 
     public void cadastro() {
-        Livro A = new Livro();
+        //Livro A = new Livro();
         setNomeLivro(JOptionPane.showInputDialog("INFORME O NOME DO LIVRO").toLowerCase());
         String outroAutor = "";
         do {
@@ -26,16 +26,16 @@ public class Livro {
         while (getPreco() <= 0) {
             setPreco(Double.parseDouble(JOptionPane.showInputDialog("PREÇO INVALIDO! INFORME CORRETAMENTE:")));
         }
-        livros.add(A);
+        livros.add(this);
     }
 
     public String exibirDados() {
         String dados = " | ";
         for (Livro A : livros) {
-            dados += A.getNomeLivro() + " | " + "R$ " + A.getPreco() + "\n";
+            dados += A.getNomeLivro() + " | " + "R$ " + A.getPreco() + " | \n";
         }
         for (Autor j : autores) {
-            dados += j.getNomeAutor() + " | " + j.getSexo() + " | " + j.getIdade();
+            dados += " | " + j.getNomeAutor() + " | " + j.getSexo() + " | " + j.getIdade() + " | ";
         }
         return dados;
     }
