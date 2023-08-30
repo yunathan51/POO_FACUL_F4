@@ -8,6 +8,7 @@ public class Operador {
     public static void main(String[] args) {
 
         ArrayList<Times> times = new ArrayList<Times>();
+
         String menu = "1 - CADASTRAR TIME\n"
                 + "2 - LISTAR JOGADORES DE UM TIME\n"
                 + "3 - ARTILHEIRO DE UM TIME\n"

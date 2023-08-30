@@ -8,7 +8,7 @@ public class Autor {
     public void cadAutor() {
         setNomeAutor(JOptionPane.showInputDialog("INFORME O NOME DO AUTOR"));
         setSexo(JOptionPane.showInputDialog("INFORME O SEXO DO AUTOR| M/F").toUpperCase());
-        while(!getSexo().equals("M") || !getSexo().equals("F")) {
+        while(!getSexo().equals("M") && !getSexo().equals("F")) {
             setSexo(JOptionPane.showInputDialog("SEXO INVALIDO, INFORME NOVAMENTE| M/F").toUpperCase());
         }
         setIdade(Integer.parseInt(JOptionPane.showInputDialog("INFORME A IDADE DO AUTOR")));

@@ -23,7 +23,7 @@ public class Livro {
         } while (outroAutor.equalsIgnoreCase("S"));
 
         setPreco(Double.parseDouble(JOptionPane.showInputDialog("INFORME O PREÇO DO LIVRO:")));
-        while (getPreco() < 0) {
+        while (getPreco() <= 0) {
             setPreco(Double.parseDouble(JOptionPane.showInputDialog("PREÇO INVALIDO! INFORME CORRETAMENTE:")));
         }
         livros.add(A);
