@@ -35,7 +35,7 @@ public class Livro {
             dados += A.getNomeLivro() + " | " + "R$ " + A.getPreco() + " | \n";
         }
         for (Autor j : autores) {
-            dados += " | " + j.getNomeAutor() + " | " + j.getSexo() + " | " + j.getIdade() + " | ";
+            dados += " | " + j.getNomeAutor() + " | " + j.getSexo() + " | " + j.getIdade() + " | " + "\n\n";
         }
         return dados;
     }
