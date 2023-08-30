@@ -13,8 +13,8 @@ public class Menu {
                 "2 - LISTAR TODOS OS LIVROS CADASTRADOS\n" +
                 "3 - PESQUISAR LIVRO POR AUTOR\n" +
                 "4 - LISTAR POR SEXO\n" +
-                "5 - PESQUISAR POR FAIXA DE PREÇO" +
-                "6 - LISTAR POR IDADE DO AUTOR" +
+                "5 - PESQUISAR POR FAIXA DE PREÇO\n" +
+                "6 - LISTAR POR IDADE DO AUTOR\n" +
                 "7 - SAIR";
 
         int op = 0;
@@ -36,6 +36,29 @@ public class Menu {
                     }
                     JOptionPane.showMessageDialog(null, print);
                 }
+
+                if (op == 3) {
+                    String listar = "INFORME O NOME DO AUTOR PARA BUSCAR\n\n";
+                    String resultado = "LIVROS:\n\n";
+                    String index ="";
+                    for (Livro B : livros) {
+
+                        listar += B.exibirAutores();
+                    }
+                    index = JOptionPane.showInputDialog(listar).toLowerCase();
+                    for (Livro B :livros) {
+                        if (index.equalsIgnoreCase(B.exibirDados())) {
+                            resultado += B.exibirDados();
+                        }
+                    }
+                    JOptionPane.showMessageDialog(null, resultado);
+                }
+
+
+
+
+
+
 
         } while(op != 7);
     }

@@ -40,6 +40,14 @@ public class Livro {
         return dados;
     }
 
+    public String exibirAutores() {
+        String dados = " | ";
+        for (Autor j : autores) {
+            dados += j.getNomeAutor() + " | \n";
+        }
+        return dados;
+    }
+
 
 
 
