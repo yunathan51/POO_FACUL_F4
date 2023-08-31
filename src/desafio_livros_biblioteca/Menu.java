@@ -47,18 +47,12 @@ public class Menu {
                     }
                     index = JOptionPane.showInputDialog(listar).toLowerCase();
                     for (Livro B :livros) {
-                        if (index.equalsIgnoreCase(B.exibirDados())) {
+                        if (index.equalsIgnoreCase(B.getNomeLivro())) {
                             resultado += B.exibirDados();
                         }
                     }
                     JOptionPane.showMessageDialog(null, resultado);
                 }
-
-
-
-
-
-
 
         } while(op != 7);
     }

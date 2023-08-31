@@ -41,7 +41,7 @@ public class Livro {
     }
 
     public String exibirAutores() {
-        String dados = " | ";
+        String dados ="";
         for (Autor j : autores) {
             dados += j.getNomeAutor() + " | \n";
         }
