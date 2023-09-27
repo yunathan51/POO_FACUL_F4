@@ -5,47 +5,45 @@ import java.util.ArrayList;
 
 public class Paciente {
 
-    ArrayList<Paciente> condicoesSaude = new ArrayList<Paciente>();
-    ArrayList<Paciente> sintomas = new ArrayList<Paciente>();
+    private ArrayList<Paciente> condicoesSaude = new ArrayList<Paciente>();
 
-    private String nomePessoa;
+    private ArrayList<Paciente> remediosDescritos = new ArrayList<Paciente>();
+
+    private String nome;
+
     private String sintoma;
-    private String condicoes;
-
-
-    public void cadastraPessoa() {
-        setNomePessoa(JOptionPane.showInputDialog("Informe o nome da pessoa"));
-        JOptionPane.showMessageDialog(null, "Informe os sintomas ou a condição de saude da pessoa");
-        String op = "";
+    private String condicaoSaude;
+    public void cadastrarPessoa() {
+        setNome(JOptionPane.showInputDialog("digite o nome do usuario"));
+        setSintoma(JOptionPane.showInputDialog("Informe o sintoma"));
+        String continua;
 
         do {
-            int escolha = Integer.parseInt(JOptionPane.showInputDialog("1 - Sintoma\n2 - Condição de saúde\n3 - Sair"));
+            Paciente P = new Paciente();
+            condicaoSaude = JOptionPane.showInputDialog("Digite a condição de saude");
+            P.setCondicaoSaude(condicaoSaude);
+            condicoesSaude.add(P);
 
-            switch (escolha) {
-                case 1:
-                    setSintoma(JOptionPane.showInputDialog("Informe o sintoma"));
-                    sintomas.add(this);
-                    break;
-                case 2:
-                    setCondicoes(JOptionPane.showInputDialog("Informe a condição de saúde"));
-                    condicoesSaude.add(this);
-                    break;
-                case 3:
-                    JOptionPane.showMessageDialog(null, "Saindo...");
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Opção inválida");
-                    break;
+            continua = JOptionPane.showInputDialog("Deseja cadastrar outra condição de saude?");
+        } while (continua.equalsIgnoreCase("S"));
+    }
+
+    public String exibirPessoa(ArrayList<Paciente> pessoas) {
+        String exib = "";
+
+        for (Paciente A : pessoas) {
+            exib += "NOME: " + A.getNome() + "\n";
+            exib += "REMÉDIO/S: " + A.getRemediosDescritos() + "\n\n";
+
+            exib += "CONDICAO DE SAUDE:\n ";
+            for (Paciente P : A.getCondicoesSaude()) {
+                exib += "- " + P.getCondicaoSaude() + "\n";
             }
 
-            op = JOptionPane.showInputDialog("Deseja cadastrar outro sintoma/condição? (S/N)");
-        } while (op.equalsIgnoreCase("S"));
+            exib += "\nSINTOMA: " + getSintoma();
 
-
-    }
-
-    public String exibirPessoa() {
-        return getNomePessoa() + "\n" + getSintoma() + "\n" + getCondicoes();
+        }
+        return exib;
     }
 
 
@@ -57,22 +55,12 @@ public class Paciente {
 
 
 
-
-
-
-
-
-
-
-
-
-
-    public String getNomePessoa() {
-        return nomePessoa;
+    public String getNome() {
+        return nome;
     }
 
-    public void setNomePessoa(String nomePessoa) {
-        this.nomePessoa = nomePessoa;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getSintoma() {
@@ -83,14 +71,31 @@ public class Paciente {
         this.sintoma = sintoma;
     }
 
-    public String getCondicoes() {
-        return condicoes;
+    public String getCondicaoSaude() {
+        return condicaoSaude;
     }
 
-    public void setCondicoes(String condicoes) {
-        this.condicoes = condicoes;
+    public void setCondicaoSaude(String condicaoSaude) {
+        this.condicaoSaude = condicaoSaude;
+    }
+
+    public ArrayList<Paciente> getCondicoesSaude() {
+        return condicoesSaude;
+    }
+
+    public void setCondicoesSaude(ArrayList<Paciente> condicoesSaude) {
+        this.condicoesSaude = condicoesSaude;
+    }
+
+    public ArrayList<Paciente> getRemediosDescritos(Medicamentoo medicamentoo) {
+        return remediosDescritos;
+    }
+
+    public void setRemediosDescritos(ArrayList<Paciente> remediosDescritos) {
+        this.remediosDescritos = remediosDescritos;
     }
 
 
-
+    public void setRemediosDescritos(Medicamentoo medicamentoo) {
+    }
 }

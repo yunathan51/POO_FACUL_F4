@@ -3,73 +3,94 @@ package atividade_medicamento;
 import javax.swing.*;
 import java.util.ArrayList;
 
+
 public class Menu {
 
-
-    private static ArrayList<Medicamentoo> medicamentos = new ArrayList<Medicamentoo>();
-    private static ArrayList<Paciente> sintomas = new ArrayList<Paciente>();
-
     public static void main(String[] args) {
-        int op = 0;
+
+        ArrayList<Medicamentoo> remedios = new ArrayList<Medicamentoo>();
+        ArrayList<Paciente> pessoas = new ArrayList<Paciente>();
+
+        String menu = "1 - CADASTRO REMEDIOS\n" +
+                "2 - LISTAR REMEDIOS\n" +
+                "3 - CADASTRO PESSOA\n" +
+                "4 - LISTAR PESSOAS\n" +
+                "5 - RECEITAR REMÉDIO";
+
+        int op =0;
+
         do {
-            op = escolheMenu();
-            switch (op) {
-                case 1:
-                    cadastraMed();
-                    break;
-                case 2:
-                    cadastraPaciente();
-                    break;
-                case 3:
-                    listarMed();
-                    break;
-                case 4:
-                    listarPaciente();
-                    break;
-                default:
-                    JOptionPane.showMessageDialog(null, "Opção inválida");
-                    break;
+            op = Integer.parseInt(JOptionPane.showInputDialog(menu));
+
+            if (op == 1) {
+
+
+                Medicamentoo C = new Medicamentoo();
+                C.cadRemed();
+                remedios.add(C);
+
             }
+
+            if (op == 2) {
+                String lista = "";
+                for (Medicamentoo R : remedios) {
+                    lista += R.exibirRemed(remedios);
+                }
+                JOptionPane.showMessageDialog(null, lista);
+            }
+
+            if (op == 3) {
+                Paciente E = new Paciente();
+                E.cadastrarPessoa();
+                pessoas.add(E);
+            }
+
+            if (op == 4) {
+                String exib = "";
+                for (Paciente P : pessoas) {
+                    exib += P.exibirPessoa(pessoas);
+                }
+                JOptionPane.showMessageDialog(null, exib);
+            }
+
+            if (op == 5) {
+                String exibir = "SELECIONE A PESSOA:\n\n";
+                int i = 0;
+                for (Paciente P : pessoas) {
+                    i++;
+                    exibir += i + " | " + P.getNome() + "\n";
+                }
+                int index = Integer.parseInt(JOptionPane.showInputDialog(exibir)) - 1;
+
+                String exibirRemedios = "REMÉDIOS DISPONIVEIS:\n\n";
+
+                for(Medicamentoo R : remedios) {
+                    if (R.getIndicacao().equalsIgnoreCase(pessoas.get(index).getSintoma()) || !R.getIndicacao().equalsIgnoreCase(pessoas.get(index).getCondicaoSaude())) {
+                        exibirRemedios += R.getNomeRemedio() + "\n";
+                    } else {
+                        JOptionPane.showMessageDialog(null, "NÃO HÁ REMÉDIOS DISPONIVEIS PARA ESTA PESSOA");
+                    }
+                }
+                if (exibirRemedios != "REMÉDIOS DISPONIVEIS\n\n") {
+                    int indexRemedio = Integer.parseInt(JOptionPane.showInputDialog(exibirRemedios)) - 1;
+                    pessoas.get(index).setRemediosDescritos(remedios.get(indexRemedio));
+                }
+
+                /*String exibirRemedios = "SELECIONE O REMÉDIO:\n\n";
+                int j = 0;
+                for (Medicamentoo R : remedios) {
+                    j++;
+                    exibirRemedios += j + " | " + R.getNomeRemedio() + "\n";
+                }
+                int indexRemedio = Integer.parseInt(JOptionPane.showInputDialog(exibirRemedios)) - 1;
+                */
+            }
+
         } while (op != 0);
+
+
+
+
+
     }
-
-
-
-    private static int escolheMenu() {
-        String menu = "1 - CADASTRAR MEDICAMENTO\n" +
-                "2 - CADASTRAR PACIENTE\n" +
-                "3 - LISTAR MEDICAMENTOS\n" +
-                "4 - LISTAR PACIENTES";
-        return Integer.parseInt(JOptionPane.showInputDialog(menu));
-    }
-
-    private static void cadastraMed() {
-        Medicamentoo A = new Medicamentoo();
-        A.cadRemedio();
-        medicamentos.add(A);
-    }
-
-    private static void cadastraPaciente() {
-        Paciente A = new Paciente();
-        A.cadastraPessoa();
-        sintomas.add(A);
-    }
-
-    private static void listarMed() {
-        String lista = "";
-        for (Medicamentoo medicamento : medicamentos) {
-            lista += medicamento.exibirRemed() + "\n";
-        }
-        JOptionPane.showMessageDialog(null, lista);
-    }
-
-    private static void listarPaciente() {
-        String lista = "";
-        for (Paciente paciente : sintomas) {
-            lista += paciente.exibirPessoa() + "\n";
-        }
-        JOptionPane.showMessageDialog(null, lista);
-    }
-
-
 }

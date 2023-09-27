@@ -5,128 +5,76 @@ import java.util.ArrayList;
 
 public class Medicamentoo {
 
-    ArrayList<Medicamentoo> contras = new ArrayList<Medicamentoo>();
-    ArrayList<Medicamentoo> indicado = new ArrayList<Medicamentoo>();
+    private ArrayList<Medicamentoo> contraIndicacao = new ArrayList<Medicamentoo>();
+    private ArrayList<Medicamentoo> Topindicacao = new ArrayList<Medicamentoo>();
 
-    private String nomeMed;
-
+    private String nomeRemedio;
     private String administracao;
+
     private String indicacao;
+    private String contraIndicao;
 
-    private String contraIndicacao;
+    public void cadRemed() {
 
-    private char perguntar;
+        setNomeRemedio(JOptionPane.showInputDialog("INFORME O NOME DO REMEDIO").toLowerCase());
+        setAdministracao(JOptionPane.showInputDialog("ORAL | TOPICO | INJETAVEL").toLowerCase());
+        String continua;
+        do {
+            Medicamentoo A = new Medicamentoo();
+            indicacao = JOptionPane.showInputDialog("INFORME A INDICAÇÃO DO REMEDIO").toLowerCase();
+            A.setIndicacao(indicacao);
+            Topindicacao.add(A);
 
-    public void cadRemedio() {
-        setNomeMed(JOptionPane.showInputDialog("Informe o nome do remédio"));
-        setAdministracao(JOptionPane.showInputDialog("1 - Oral\n2 - Injetável\n3 - Tópico"));
-        setPerguntar(JOptionPane.showInputDialog("Deseja adicionar contra indicação ou indicação? (S/N)").toUpperCase().charAt(0));
-        String novamente = "";
-            do {
-                int escolha = Integer.parseInt(JOptionPane.showInputDialog("1 - Indicação\n2 - Contra indicação\n3 - Sair"));
-                switch (escolha) {
-                    case 1:
-                        setIndicacao(JOptionPane.showInputDialog("Informe a indicação"));
-                        indicado.add(this);
-                        break;
-                    case 2:
-                        setContraIndicacao(JOptionPane.showInputDialog("Informe a contra indicação"));
-                        contras.add(this);
-                        break;
-                    case 3:
-                        JOptionPane.showMessageDialog(null, "Saindo...");
-                        break;
-                    default:
-                        JOptionPane.showMessageDialog(null, "Opção inválida");
-                        break;
-                }
+            continua = JOptionPane.showInputDialog("DESEJA ADICIONAR OUTRA INDICAÇÃO? (S/N)").toUpperCase();
+        }while (continua.equalsIgnoreCase("S"));
 
+        do {
+            Medicamentoo A = new Medicamentoo();
+            contraIndicao = JOptionPane.showInputDialog("INFORME A CONTRA INDICAÇÃO DO REMEDIO").toLowerCase();
+            A.setContraIndicao(contraIndicao);
+            contraIndicacao.add(A);
 
-
-
-                novamente = JOptionPane.showInputDialog("Deseja cadastrar alguma outra indicação/contra?").toUpperCase();
-            } while (novamente.equalsIgnoreCase("S"));
+            continua = JOptionPane.showInputDialog("DESEJA ADICIONAR CONTRA CONTRA INDICAÇÃO? (S/N)").toUpperCase();
+        } while (continua.equalsIgnoreCase("S"));
     }
 
-    public String exibirRemed() {
+    public String exibirRemed(ArrayList<Medicamentoo> remedios) {
+        String lista = "";
+        for (Medicamentoo r : remedios) {
+            lista += "NOME: " + r.getNomeRemedio() + "\n";
+            lista+= "USO: " + r.getAdministracao() + "\n";
 
+            lista += "\nINDICAÇÕES:\n";
 
-
-
-
-
-
-
-
-
-        return getNomeMed() + "\n" + getAdministracao() + "\n" + getIndicado() + "\n" + getContraIndicacao();
-    }
-
-
-
-/*
-    public void cadContraIndicacao() {
-        while (getPerguntar() == 'S') {
-            String novaContraIndicao = JOptionPane.showInputDialog("Informe a contra indicação");
-            setContraIndicacao(novaContraIndicao);
-
-            char continua = JOptionPane.showInputDialog("Deseja adicionar mais contra indicações? (S/N)").toUpperCase().charAt(0);
-            if (continua != 'S') {
-                JOptionPane.showMessageDialog(null, "Optou por não cadastrar contra indicação");
-                break;
+            for (Medicamentoo indicacao : r.getTopindicacao()) {
+                lista += "- " + indicacao.getIndicacao() + "\n";
             }
+
+            lista+= "\n\nCONTRA INDICAÇÕES:\n";
+            for (Medicamentoo contraIndicacao : r.getContraIndicacao()) {
+                lista += "- " + contraIndicacao.getContraIndicao() + "\n";
+            }
+
+            lista += "\n";
         }
-    } */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public String getNomeMed() {
-        return nomeMed;
+        return lista;
     }
 
-    public void setNomeMed(String nomeMed) {
-        this.nomeMed = nomeMed;
+
+
+
+
+
+
+
+
+    public String getNomeRemedio() {
+        return nomeRemedio;
+    }
+
+    public void setNomeRemedio(String nomeRemedio) {
+        this.nomeRemedio = nomeRemedio;
     }
 
     public String getAdministracao() {
@@ -145,35 +93,27 @@ public class Medicamentoo {
         this.indicacao = indicacao;
     }
 
-    public String getContraIndicacao() {
+    public String getContraIndicao() {
+        return contraIndicao;
+    }
+
+    public void setContraIndicao(String contraIndicao) {
+        this.contraIndicao = contraIndicao;
+    }
+
+    public ArrayList<Medicamentoo> getContraIndicacao() {
         return contraIndicacao;
     }
 
-    public void setContraIndicacao(String contraIndicacao) {
+    public void setContraIndicacao(ArrayList<Medicamentoo> contraIndicacao) {
         this.contraIndicacao = contraIndicacao;
     }
 
-    public char getPerguntar() {
-        return perguntar;
+    public ArrayList<Medicamentoo> getTopindicacao() {
+        return Topindicacao;
     }
 
-    public void setPerguntar(char perguntar) {
-        this.perguntar = perguntar;
-    }
-
-    public ArrayList<Medicamentoo> getContras() {
-        return contras;
-    }
-
-    public void setContras(ArrayList<Medicamentoo> contras) {
-        this.contras = contras;
-    }
-
-    public ArrayList<Medicamentoo> getIndicado() {
-        return indicado;
-    }
-
-    public void setIndicado(ArrayList<Medicamentoo> indicado) {
-        this.indicado = indicado;
+    public void setTopindicacao(ArrayList<Medicamentoo> topindicacao) {
+        Topindicacao = topindicacao;
     }
 }
