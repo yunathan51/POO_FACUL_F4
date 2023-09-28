@@ -61,6 +61,7 @@ public class Menu {
                     exibir += i + " | " + P.getNome() + "\n";
                 }
                 int index = Integer.parseInt(JOptionPane.showInputDialog(exibir)) - 1;
+                Paciente pacienteSelecionado = pessoas.get(index);
 
                 String exibirRemedios = "REMÉDIOS DISPONIVEIS:\n\n";
 
@@ -73,7 +74,9 @@ public class Menu {
                 }
                 if (exibirRemedios != "REMÉDIOS DISPONIVEIS\n\n") {
                     int indexRemedio = Integer.parseInt(JOptionPane.showInputDialog(exibirRemedios)) - 1;
+                    Medicamentoo remedioSelecionado = remedios.get(indexRemedio);
                     pessoas.get(index).setRemediosDescritos(remedios.get(indexRemedio));
+                    pacienteSelecionado.getRemediosPrescritos().add(remedioSelecionado);
                 }
 
                 /*String exibirRemedios = "SELECIONE O REMÉDIO:\n\n";

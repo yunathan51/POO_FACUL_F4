@@ -7,7 +7,7 @@ public class Paciente {
 
     private ArrayList<Paciente> condicoesSaude = new ArrayList<Paciente>();
 
-    private ArrayList<Paciente> remediosDescritos = new ArrayList<Paciente>();
+    private ArrayList<Medicamentoo> remediosDescritos = new ArrayList<Medicamentoo>();
 
     private String nome;
 
@@ -87,14 +87,17 @@ public class Paciente {
         this.condicoesSaude = condicoesSaude;
     }
 
-    public ArrayList<Paciente> getRemediosDescritos(Medicamentoo medicamentoo) {
+    public ArrayList<Medicamentoo> getRemediosDescritos() {
         return remediosDescritos;
     }
 
-    public void setRemediosDescritos(ArrayList<Paciente> remediosDescritos) {
+    public void setRemediosDescritos(ArrayList<Medicamentoo> remediosDescritos) {
         this.remediosDescritos = remediosDescritos;
     }
 
+    public ArrayList<Medicamentoo> getRemediosPrescritos() {
+        return remediosDescritos;
+    }
 
     public void setRemediosDescritos(Medicamentoo medicamentoo) {
     }

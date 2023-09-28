@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c5097fa0-2541-431a-86cf-19d2d8127bab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Medicamentoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade_medicamento/Medicamentoo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade_medicamento/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade_medicamento/Paciente.java" afterDir="false" />
     </list>
@@ -51,6 +50,17 @@
       <updated>1692379797541</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
