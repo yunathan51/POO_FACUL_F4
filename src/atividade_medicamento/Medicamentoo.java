@@ -34,7 +34,7 @@ public class Medicamentoo {
             A.setContraIndicao(contraIndicao);
             contraIndicacao.add(A);
 
-            continua = JOptionPane.showInputDialog("DESEJA ADICIONAR CONTRA CONTRA INDICAÇÃO? (S/N)").toUpperCase();
+            continua = JOptionPane.showInputDialog("DESEJA ADICIONAR OUTRA CONTRA INDICAÇÃO? (S/N)").toUpperCase();
         } while (continua.equalsIgnoreCase("S"));
     }
 
