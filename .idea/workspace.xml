@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5097fa0-2541-431a-86cf-19d2d8127bab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Autor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Bibliotecario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Pessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2UAQEYpbv6le2BC3sBrxBufqy0C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,6 +69,11 @@
     </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="ae7051b4-d144-458a-ac09-54dbc6da8932" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -73,7 +84,6 @@
         <entry key="ae7051b4-d144-458a-ac09-54dbc6da8932">
           <value>
             <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -92,14 +102,10 @@
                   </entry>
                 </map>
               </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="ae7051b4-d144-458a-ac09-54dbc6da8932" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
