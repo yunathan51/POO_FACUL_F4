@@ -7,6 +7,7 @@ public class Livro {
     private String titulo;
     private Autor autor;
     private Bibliotecario responsavel;
+    private boolean emprestado;
 
 
 
@@ -18,6 +19,10 @@ public class Livro {
 
     public void emprestar(String pessoa) {
         JOptionPane.showMessageDialog(null, "O livro " + this.titulo + " foi emprestado para " + pessoa);
+    }
+
+    public void disponibilidade() {
+        JOptionPane.showMessageDialog(null, "O livro " + this.titulo + " está ");
     }
 
 
@@ -62,5 +67,13 @@ public class Livro {
 
     public void setResponsavel(Bibliotecario responsavel) {
         this.responsavel = responsavel;
+    }
+
+    public boolean isEmprestado() {
+        return emprestado;
+    }
+
+    public void setEmprestado(boolean emprestado) {
+        this.emprestado = emprestado;
     }
 }

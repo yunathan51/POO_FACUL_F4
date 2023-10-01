@@ -35,9 +35,15 @@ public class Main {
                 case 6:
                     emprestarLivro();
                     break;
+                case 7:
+                    devolverLivro();
+                    break;
+                case 8:
+                    listarTodosLivros();
+                    break;
             }
 
-        } while (op != 7);
+        } while (op != 9);
 
     }
 
@@ -49,7 +55,9 @@ public class Main {
                         "4. Listar Livros de um Autor\n" +
                         "5. Listar Livros sob Responsabilidade de um Bibliotecário\n" +
                         "6. Emprestar Livro\n" +
-                        "7. Sair";
+                        "7. Devolver livro\n" +
+                        "8. Disponibilidade\n" +
+                        "9. Sair";
 
         return Integer.parseInt(JOptionPane.showInputDialog(escolha));
     }
@@ -142,10 +150,12 @@ public class Main {
     private static void emprestarLivro() {
         String pessoaEmprestar = JOptionPane.showInputDialog("Informe o nome da pessoa que deseja emprestar o livro: ");
         String exibir = "Livros disponiveis: \n";
+        int i = 0;
         for (Livro livro : livros) {
-            int i = 0;
-            i++;
-            exibir += i  + " - "+ livro.getTitulo() + "\n";
+            if (!livro.isEmprestado()) {
+                i++;
+                exibir += i  + " - "+ livro.getTitulo() + "\n";
+            }
         }
 
         int escolheLivro = Integer.parseInt(JOptionPane.showInputDialog(exibir + "Informe o livro que deseja emprestar: "));
@@ -155,11 +165,44 @@ public class Main {
                 livro.emprestar(pessoaEmprestar);
                 JOptionPane.showMessageDialog(null, "Livro emprestado com sucesso!");
                 livroDisponivel = true;
+                livro.setEmprestado(true);
             }
         }
 
         if (!livroDisponivel) {
             JOptionPane.showMessageDialog(null, "Livro não disponivel!");
         }
+    }
+
+    private static void listarTodosLivros() {
+        String listaLivros = "Lista de Todos os Livros:\n";
+
+        for (Livro livro : livros) {
+            boolean disponivel = !livro.isEmprestado(); // Verifica se o livro não está emprestado
+
+            listaLivros += "\n" + livro.getTitulo() + "\n";
+            listaLivros += (disponivel ? "DISPONÍVEL" : "INDISPONÍVEL") + "\n\n";
+        }
+
+        JOptionPane.showMessageDialog(null, listaLivros);
+    }
+
+    private static void devolverLivro() {
+        String exibir = "Livros: \n";
+        int i = 0;
+        for (Livro livro : livros) {
+            if (livro.isEmprestado()) {
+                i++;
+                exibir += i  + " - "+ livro.getTitulo() + "\n";
+            }
+        }
+        int escolheLivro = Integer.parseInt(JOptionPane.showInputDialog(exibir + "Informe o livro que deseja devolver: "));
+        for (Livro livro : livros) {
+            if (livro.getTitulo().equals(livros.get(escolheLivro - 1).getTitulo())) {
+                livro.setEmprestado(false);
+                JOptionPane.showMessageDialog(null, livro.getTitulo() + " devolvido com sucesso!");
+            }
+        }
+
     }
 }
