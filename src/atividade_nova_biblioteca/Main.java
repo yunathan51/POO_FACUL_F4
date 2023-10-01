@@ -178,8 +178,7 @@ public class Main {
         String listaLivros = "Lista de Todos os Livros:\n";
 
         for (Livro livro : livros) {
-            boolean disponivel = !livro.isEmprestado(); // Verifica se o livro não está emprestado
-
+            boolean disponivel = !livro.isEmprestado();
             listaLivros += "\n" + livro.getTitulo() + "\n";
             listaLivros += (disponivel ? "DISPONÍVEL" : "INDISPONÍVEL") + "\n\n";
         }
