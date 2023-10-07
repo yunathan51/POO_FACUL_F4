@@ -21,9 +21,7 @@ public class Livro {
         JOptionPane.showMessageDialog(null, "O livro " + this.titulo + " foi emprestado para " + pessoa);
     }
 
-    public void disponibilidade() {
-        JOptionPane.showMessageDialog(null, "O livro " + this.titulo + " está ");
-    }
+
 
 
 

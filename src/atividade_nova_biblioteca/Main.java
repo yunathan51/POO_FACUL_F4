@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Main {
 
-    private static List<Livro> livros = new ArrayList<>();
-    private static List<Autor> autores = new ArrayList<>();
-    private static List<Bibliotecario> bibliotecarios = new ArrayList<>();
+    private static final List<Livro> livros = new ArrayList<>();
+    private static final List<Autor> autores = new ArrayList<>();
+    private static final List<Bibliotecario> bibliotecarios = new ArrayList<>();
 
     public static void main(String[] args) {
 
@@ -48,16 +48,17 @@ public class Main {
     }
 
     private static int menu() {
-        String escolha = "Escolha uma opção:\n" +
-                        "1. Cadastrar Autor\n" +
-                        "2. Cadastrar Bibliotecário\n" +
-                        "3. Cadastrar Livro\n" +
-                        "4. Listar Livros de um Autor\n" +
-                        "5. Listar Livros sob Responsabilidade de um Bibliotecário\n" +
-                        "6. Emprestar Livro\n" +
-                        "7. Devolver livro\n" +
-                        "8. Disponibilidade\n" +
-                        "9. Sair";
+        String escolha = """
+                Escolha uma opção:
+                1. Cadastrar Autor
+                2. Cadastrar Bibliotecário
+                3. Cadastrar Livro
+                4. Listar Livros de um Autor
+                5. Listar Livros sob Responsabilidade de um Bibliotecário
+                6. Emprestar Livro
+                7. Devolver livro
+                8. Disponibilidade
+                9. Sair""";
 
         return Integer.parseInt(JOptionPane.showInputDialog(escolha));
     }
