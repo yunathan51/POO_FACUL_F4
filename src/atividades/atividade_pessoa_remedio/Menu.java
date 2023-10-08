@@ -1,7 +1,4 @@
-package atividade_pessoa_remedio;
-
-import atividade_medicamento.Medicamentoo;
-import atividade_medicamento.Paciente;
+package atividades.atividade_pessoa_remedio;
 
 import javax.swing.*;
 import java.util.ArrayList;

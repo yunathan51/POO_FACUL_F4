@@ -1,4 +1,4 @@
-package desafio_livros_biblioteca;
+package atividades.desafio_livros_biblioteca;
 
 import javax.swing.*;
 import java.util.ArrayList;

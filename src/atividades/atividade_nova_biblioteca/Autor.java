@@ -1,4 +1,4 @@
-package atividade_nova_biblioteca;
+package atividades.atividade_nova_biblioteca;
 
 import java.util.ArrayList;
 import java.util.List;

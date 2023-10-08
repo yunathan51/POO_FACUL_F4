@@ -1,4 +1,4 @@
-package desafio_jogadores_times;
+package atividades.desafio_jogadores_times;
 
 import javax.swing.*;
 import java.util.ArrayList;

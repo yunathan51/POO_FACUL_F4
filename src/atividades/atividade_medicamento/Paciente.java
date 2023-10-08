@@ -1,4 +1,4 @@
-package atividade_medicamento;
+package atividades.atividade_medicamento;
 
 import javax.swing.*;
 import java.util.ArrayList;

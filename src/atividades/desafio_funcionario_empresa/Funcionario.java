@@ -1,4 +1,4 @@
-package desafio_funcionario_empresa;
+package atividades.desafio_funcionario_empresa;
 
 import javax.swing.*;
 
