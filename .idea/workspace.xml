@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5097fa0-2541-431a-86cf-19d2d8127bab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/atividade_condominio/Apartamentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade_condominio/Condominio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atividade_condominio/Despesas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio_condominio_contas/Apartamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio_condominio_contas/Despesas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio_condominio_contas/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco_Vasco/Caixa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco_Vasco/Contas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banco_Vasco/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Medicamentoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Medicamentoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_medicamento/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Autor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Bibliotecario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Bibliotecario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_nova_biblioteca/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Medicamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Medicamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_pessoa_remedio/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_funcionario_empresa/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_funcionario_empresa/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_funcionario_empresa/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_funcionario_empresa/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_jogadores_times/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Jogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_jogadores_times/Operador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Operador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_jogadores_times/Times.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Times.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_livros_biblioteca/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Autor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_livros_biblioteca/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/desafio_livros_biblioteca/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exCarros/carros_cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/exCarros/carros_cadastro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exCarros/operacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atividades/exCarros/operacoes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
