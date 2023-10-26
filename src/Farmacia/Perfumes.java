@@ -6,24 +6,17 @@ public class Perfumes extends Produtos{
         super();
     }
 
-    public Perfumes(String nome, int valor, int estoque, boolean precisaReceita) {
-        super(nome, valor, estoque, precisaReceita);
+    public Perfumes(String nome, int estoque, int valor) {
+        super(nome, estoque, valor, false);
     }
-
 
     @Override
-    public boolean venda(Cliente c, int qtd) {
-        if (c.getSaldoDevedor() < 100) {
-            if (estoque > 0) {
-                estoque -= qtd;
-                c.setSaldoDevedor(c.getSaldoDevedor() + (valor * qtd));
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
+    public boolean comprarProduto(Cliente c, String produto, int qtd) {
+        if (c.saldoDevedor < 100) {
+            estoque -= qtd;
+            c.saldoDevedor += (valor * qtd);
+            return true;
         }
+        return false;
     }
-
 }

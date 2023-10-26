@@ -5,55 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5097fa0-2541-431a-86cf-19d2d8127bab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/EquipMedicos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Farmacia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Medicamentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Perfumes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Farmacia/Produtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q2/Q2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q2/TestA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q2/TestB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Q3/Q3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudo/Alpha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudo/Beta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudo/Gamma.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/estudo/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/Plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tree/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_condominio/Apartamentos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_condominio/Condominio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividade_condominio/Despesas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Medicamentoo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_medicamento/Paciente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Autor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Bibliotecario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Livro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_nova_biblioteca/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Medicamento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/atividade_pessoa_remedio/Pessoa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_funcionario_empresa/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_funcionario_empresa/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Jogador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Operador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_jogadores_times/Times.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Autor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Livro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/desafio_livros_biblioteca/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/exCarros/carros_cadastro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atividades/exCarros/operacoes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco_Vasco/Caixa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco_Vasco/Contas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banco_Vasco/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicio_condominio_contas/Apartamento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicio_condominio_contas/Despesas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicio_condominio_contas/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/EquipMedicos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/EquipMedicos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Farmacia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Medicamentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/Medicamentos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Perfumes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/Perfumes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmacia/Produtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmacia/Produtos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

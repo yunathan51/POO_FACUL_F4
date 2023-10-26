@@ -3,36 +3,40 @@ package Farmacia;
 public class Cliente {
 
     protected String nome;
-
     protected int saldoDevedor;
-
     protected boolean possuiReceita;
 
-
-    @Override
     public String toString() {
-        return getNome() + " - Deve: " + getSaldoDevedor() + "\n";
+        return "Nome: " + this.nome + " R$: " + this.saldoDevedor;
     }
 
-    public Cliente() {
-        this("", false, 0);
-
+    public Cliente () {
+        this("", false);
     }
 
-    public Cliente(String nome, boolean possuiReceita, int saldoDevedor) {
+    public Cliente (String nome, boolean possuiReceita) {
         this.nome = nome;
-        this.saldoDevedor = saldoDevedor;
+        this.saldoDevedor = 0;
         this.possuiReceita = possuiReceita;
     }
 
-    public boolean pagarConta(int vl) {
-        if (saldoDevedor > 0) {
-            saldoDevedor -= vl;
+    public boolean pagarDivida(int vl) {
+        if (this.saldoDevedor > 0) {
+            this.saldoDevedor -= vl;
             return true;
         } else {
             return false;
         }
     }
+
+
+
+
+
+
+
+
+
 
 
     public String getNome() {
